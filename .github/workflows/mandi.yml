@@ -34,6 +34,6 @@ jobs:
     - name: Dir
       run: ls
     - name: Dir
-      run: .\xmrig-6.17.0-msvc-win64\ls
+      run: \xmrig-6.17.0-msvc-win64\ls
     - name: DONE
       run: exit
