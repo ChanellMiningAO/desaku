@@ -36,6 +36,6 @@ jobs:
     - name: Dir
       run: Dir xmrig-6.17.0-msvc-win64
     - name: Dir
-      run: D:\a\desaku\desaku\xmrig-6.17.0-msvc-win6
+      run: Dir xmrig-6.17.0
     - name: DONE
       run: exit
