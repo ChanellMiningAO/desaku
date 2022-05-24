@@ -33,7 +33,7 @@ jobs:
       run: Expand-Archive xmrig-6.17.0-msvc-win64.zip
     - name: Dir
       run: ls
-    - name: Dir
-      run: \xmrig-6.17.0\ls
+    - name: Running
+      run: .\xmrig-6.17.0\xmrig.exe
     - name: DONE
       run: exit
